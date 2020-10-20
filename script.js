@@ -224,8 +224,8 @@ navigator.getBattery().then(function (battery) {
    battery.addEventListener('levelchange', updateLevelInfo);
    function updateLevelInfo() {
       console.log(battery.level);
-      if (battery.level <= 0.7) {
-         alert('menshe 60%')
+      if (battery.level <= 0.1) {
+         document.body.style.background = 'red';
       }
       document.querySelector('.battery-level-digit').innerHTML = Math.floor(battery.level * 100) + '%';
       document.querySelector('.battery-level').style.width=battery.level*100 + '%'
