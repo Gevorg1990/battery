@@ -1,0 +1,240 @@
+body{
+  
+
+  
+}
+.walppaper{
+  
+   max-width: 100%;
+   max-height: 100%;
+  
+
+}
+
+.zone1{
+   width: 500px;
+   height: 200px;
+   border:1px solid green;
+  margin-left: 40px;
+  margin-top: 20px;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.zone2{
+   width: 500px;
+   height: 200px;
+   border:1px solid black;
+   margin: 20px 40px;
+   position: relative;
+   text-align: center;
+   padding-top: 100px;
+}
+.zone2 img{
+  
+}
+.k{
+   width: 200px;
+   height: 200px;
+   background: #000;
+   border:1px solid black;
+   display: none;
+   
+}
+
+.k1{
+   position: relative;
+   transition: all 2s ease;
+  
+}
+
+.k1{
+   margin-left: 50%;
+   transform: translateX(-50%);
+}
+
+.container{
+  background-image: url('https://www.car-revs-daily.com/wp-content/uploads/2014/12/2015-Mercedes-Benz-SL63-AMG-World-Championship-Edition-2.jpg');
+    background-size: cover;
+  padding-top: 100px;
+  margin: 50px auto;
+
+  height: 600px;
+ box-shadow: 3px 3px 3px #000;
+   
+}
+.cover{
+   padding: 30px;
+   /* border:1px solid silver; */
+  height: 300px;
+     width: 600px;
+  /* height: 600px; */
+   position: relative; 
+   opacity: 0.2;
+   transition: all ease 1s;
+}
+.cover:hover{
+   opacity: 1;
+}
+.card{
+   width: 80%;
+   height: 80%;
+   box-shadow: 3px 3px 5px #333;
+   position: absolute;
+   transition: all ease 2s;
+   left:10%;
+   top:15%;
+}
+.go{
+   left:-9999px;
+}
+
+.engine{
+   /* border:1px solid rgb(243, 7, 7); */
+   min-height: 500px;
+     width: 300px;
+    
+}
+.img-box{
+   width: 100px;
+   height: 100px;
+   margin: 30px auto;
+   
+}
+.start{
+  position: relative;
+
+   width: 100%;
+   height: 100%;
+   
+ 
+}
+/* .img-box:after{
+
+   content: '';
+   
+   position: absolute;
+   width: 67px;
+   height: 67px;
+   
+   border-radius: 50%;
+   border:4px solid green;
+   left:184px;
+   top:49px;
+} */
+.ind{
+  width: 200px;;
+   height: 30px;
+   border:2px solid red;
+   margin-left: -50%;
+   margin-top: 30px;
+}
+.progres{
+ 
+   transition: all ease 2s;
+ width: 0px;
+ height: 100%;
+ 
+   background:green;
+}
+.img-pedal{
+   margin-top: 50px;
+  width: 100px;
+  height: 200px;
+  
+}
+
+.img-pedal img{
+   width: 100%;
+   height: 100%;
+}
+
+.push{
+   transform: perspective(205px) rotateX(14deg);
+   transition: all ease .5s;
+   /* box-shadow: 5px 5px 10px #333; */
+}
+
+.shadow{
+   box-shadow: -15px -15px 5px rgb(22, 112, 29);
+ border-radius: 50%;
+ background:linear-gradient(red 50%,black 30%)
+ 
+}
+
+.out{
+height: 80px;
+   font-size: 24px;
+   font-family: monospace;
+   color:green;
+   background: #000;
+   overflow-y: hidden;
+}
+/* baterry */
+
+.cont{
+   padding: 0px 200px;
+   margin: 100px 0px;
+}
+
+.battery{
+   width: 300px;
+   height: 90px;
+   border:1px solid silver;
+   border-radius:6%;
+   padding: 10px;
+   position: relative;
+   /* margin: 100px 0px; */
+}
+
+.battery:after{
+   content: '';
+   display: block;
+   width: 20px;
+   height: 40px;
+   background:rgb(255, 255, 255);
+   position: absolute;
+   right:  -20px;
+   top:24px;
+   border:1px solid silver;
+   border-left-color: white;
+   border-radius: 0px 4px 4px 0px;
+
+}
+
+.battery-level{
+   height: 100%;
+   width: 30%;
+   background: #6db3f2; /* Old browsers */
+background: -moz-linear-gradient(top, #6db3f2 0%, #54a3ee 50%, #3690f0 51%, #1e69de 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #6db3f2 0%,#54a3ee 50%,#3690f0 51%,#1e69de 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #6db3f2 0%,#54a3ee 50%,#3690f0 51%,#1e69de 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6db3f2', endColorstr='#1e69de',GradientType=0 ); /* IE6-9 */
+transition: all ease 1s;
+}
+
+.battery-level-digit{
+   position: absolute;
+   left:0;
+   top:0;
+   right: 0;
+   bottom: 0;
+   text-align: center;
+   font-size: 70px;
+   line-height: 92px;
+  
+}
+
+.battery-level.battery-animation{
+   animation-name: battery-carget;
+   animation-duration: 4s;
+   animation-iteration-count: infinite;
+}
+@keyframes battery-carget{
+   0%{
+      width: 20%;
+   }
+   100%{
+      width: 100%;
+   }
+}
